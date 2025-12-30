@@ -1,0 +1,9 @@
+    [
+        {
+            "local": "/sync/smb",
+            "remote": "/Backup/SMB",
+            "syncMode": "localToCloud",
+            "disableLocalTrash": true,
+            "excludeDotFiles": true
+        }
+    ]

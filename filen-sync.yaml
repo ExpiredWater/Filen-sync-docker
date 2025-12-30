@@ -1,0 +1,19 @@
+version: '0.0.39'
+services:
+  filen-sync:
+    command: >-
+      --email "<FILEN_EMAIL>" --password "<FILEN_PASSWORD>" sync
+    volumes:
+      - /mnt/Data/Apps/filen-sync:/cfg #mount to syncPairs.json file
+      - smb:/sync/smb
+    environment:
+      - FILEN_CLI_DATA_DIR=/cfg #set syncPairs.json dir
+    image: filen/cli:v0.0.39
+    container_name: filen-sync
+volumes:
+      smb:
+        driver: local
+        driver_opts:
+          type: cifs
+          device: "//192.168.1.10/SMB" #your smb //host/share
+          o: "username=<SMB_USER>,password=<SMB_PASSWORD>,uid=1000,gid=1000"

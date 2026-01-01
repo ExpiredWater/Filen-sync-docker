@@ -2,7 +2,9 @@
 
 
 ## Truenas integration useing corn job
-Command sudo docker start filen-sync
+Command: `/usr/bin/docker start filen-sync`
+
+Run As User: `root`
 
 
 ### Filen-cli docs

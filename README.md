@@ -14,4 +14,5 @@ https://docs.cli.filen.io/
 
 https://github.com/FilenCloudDienste/filen-cli
 
-https://discord.com/invite/A9cxbuA
+
+[Filen Official Discord](https://discord.com/invite/A9cxbuA)
